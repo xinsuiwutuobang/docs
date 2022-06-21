@@ -28,9 +28,22 @@ MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）�
 - 接下来就是启用RabbitMQ的MQTT插件了，默认是不启用的，使用如下命令开启即可；
 
 ```bash
+docker exec -it rabbitmq /bin/bash
 rabbitmq-plugins enable rabbitmq_mqtt
 ```
 
+- windows 插件安装；
+
+  ```java
+  pwd
+  /d/utils/code_utils/RabbitMQ Server/rabbitmq_server-3.7.14/sbin
+  ./rabbitmq-plugins.bat enable rabbitmq_mqtt
+  ./rabbitmq-plugins.bat enable rabbitmq_web_mqtt
+  
+  ```
+  
+  
+  
 - 开启成功后，查看管理控制台，我们可以发现MQTT服务运行在`1883`端口上了。
 
   ![](../images/rabbitmq_32.png)
