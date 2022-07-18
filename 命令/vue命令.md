@@ -10,7 +10,13 @@
   npm install --registry=https://registry.npm.taobao.org
   ```
 
+- 根据不同环境build
+
+   ```java
+   npm run build --dev  
+   ```
   
+  ​            
 
 ### 问题
 
